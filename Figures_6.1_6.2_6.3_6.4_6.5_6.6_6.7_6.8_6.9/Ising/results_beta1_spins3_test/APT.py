@@ -255,7 +255,7 @@ for beta in [1]:
     # ax.set_ylim(min(WexNUM), 1.5*max(WexNUM))
     #ax.set_box_aspect(1)
     ax.set_box_aspect(0.85)
-    plt.savefig(f'D:\MESTRADO\integrable ising\spins3_1varia/log(Wex)_log(tau),h0={h0},DELTA={DELTA}.png', bbox_inches='tight')
+    plt.savefig(f'D:\MESTRADO\integrable ising\spins3_1varia/log(Wex)_log(tau),h0={h0},DELTA={DELTA}.png', bbox_inches='tight', dpi=400)
 
 
 
