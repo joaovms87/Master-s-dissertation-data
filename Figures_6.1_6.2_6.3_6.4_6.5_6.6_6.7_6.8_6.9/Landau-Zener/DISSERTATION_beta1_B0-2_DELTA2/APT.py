@@ -96,16 +96,17 @@ for i, tau in enumerate(taupoints):
 
 fig, ax = plt.subplots()
 ax.grid(True)
-ax.loglog(taupoints, WexNUM, 'r.', label=r'Num. solution')
-ax.loglog(taupoints, WexAPT, 'k.', label=r'$2^{nd}$ order APT')
+ax.loglog(taupoints, WexNUM, 'r.', label=r'$W_{ex}/J$ Num. solution')
+ax.loglog(taupoints, WexAPT, 'k.', label=r'$W_{ex}/J$ $2^{nd}$ order APT')
 ax.legend(fancybox=False, edgecolor='black', loc='lower left')
 ax.set_xlabel(r'$\tau J/\hbar$')
-ax.set_ylabel('$W_{ex}/J$')
-#ax.set_title(r'$\tau$-dependence of the excess work')
+# ax.set_ylabel('$W_{ex}/J$')
+# ax.set_title(r'$\tau$-dependence of the excess work')
 # ax.set_ylim(min(WexNUM), 1.5*max(WexNUM))
-#ax.set_box_aspect(1)
+# ax.set_box_aspect(1)
+ax.set_box_aspect(0.85)
 plt.savefig(r'D:\MESTRADO\LZ_DISSERTATION/log(Wex)_log(tau),B0=-2,beta=1.png',
-                bbox_inches='tight')
+                bbox_inches='tight', dpi=400)
 
 # Wex comparison: averaging the phase
 """
